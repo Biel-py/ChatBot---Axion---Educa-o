@@ -2,103 +2,100 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Axion</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <header>
-
-        <!-- Logo -->
-        <div class="logo">
-            <div class="logo-icon"></div>
-            <h1>Axion</h1>
-        </div>
-
-        <!-- NAV -->
-        <nav class="nav">
-
-            <!-- MENU 1 -->
-            <div class="nav-item" onclick="toggleMenu(event)">
-                O que o Axion pode fazer ⌄
-                <div class="dropdown">
-                    <a>Explicar conteúdos</a>
-                    <div>Resolver exercícios passo a passo</div>
-                    <div>Gerar exercícios personalizados</div>
-                    <div>Acompanhar desempenho</div>
-                    <div>Modo prova</div>
-                    <div>Resumos e mapas mentais</div>
-                </div>
-            </div>
-
-            <div class="nav-item">Assinaturas</div>
-
-            <!-- MENU 2 -->
-            <div class="nav-item" onclick="toggleMenu(event)">
-                O que há de novo ⌄
-                <div class="dropdown">
-                    <div>Novos modelos</div>
-                    <div>Atualizações recentes</div>
-                    <div>Melhorias de desempenho</div>
-                    <div>Recursos experimentais</div>
-                </div>
-            </div>
-
+    
+    <header class="container">
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="#Sobre">Sobre Nós</a></li>   
+                <li><a href="#Benefícios">Benefícios</a></li>   
+                <li><a href="#Investimentos">Investimentos</a></li>   
+                <li><a href="#Doações">Doações</a></li>    
+            </ul>
         </nav>
 
-        <!-- Redes Sociais -->
-        <div class="redes-sociais">
+            <img src="img/fundo-principal.jpg" alt="logo" width="50" class="imagem-fundo">
 
-            <!-- Instagram -->
-            <svg class="icon" >
-                
-            </svg>
-
-            <!-- TikTok -->
-            <svg class="icon" >
-
-            </svg>
-
-            <!-- Discord -->
-            <svg class="icon" >
-
-            </svg>
-
-            <!-- X -->
-            <svg class="icon" >
-
-            </svg>
-
-            <button class="btn">Teste o Axion</button>
-        </div>
+            <div class="conteudo">
+                <h1>Axion</h1>
+                <p>Pegue as rédias do universo científico, aumentando o brilho do seu conhecimento</p>
+                <button class="button-chat">ChatBot</button>
+            </div>
 
     </header>
 
-    <main>
-        <section id="features">
-            <h2>Axion é o futuro dos estudos</h2>
-            <button>Teste o Axion</button>
-            <div class="feature-sobre">
-                <div>
-                    <div class="feature-sobre-texto">
-                        <h2>Axion</h2>
-                        <div>
-                            <p>AAAAAAAAAAAAAAAAAAAA</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Imagem ou vídeo?-->
-                <div class="feature-sobre-img">
-                    <img src="" alt="">
-                </div>
-            </div>
+    <br><br>
 
-        </section>
+    <section id="Sobre" class="Sobre-nos">
+        <div class="texto-sobre">
+            <h2>Sobre Nós</h2>
+            <p>Somos um grupo de estudantes, cursando a área de desenvolvimento de sistemas na ETE Porto Digital, 
+                empenhados em usar nossos conhecimentos técnicos e escolares para auxiliar e melhorar o ensino para os estudantes, 
+                um projeto abrangente que pensa tanto no aluno avançado que domina as matérias de exatas, quanto no aluno regular, 
+                que apenas tem interece de entender o conteúdo de forma direta e quer dominar a matéria que normalmente há bastante dificuldade. 
+                Queremos proporcionar um ambiente em que todos se sintam confortáveis e confiantes para enfrentar os desafios das exatas. 
+                Contamos com seu apoio e com seus futuros resultados. </p>
+        </div>
+        <img src="img/logo-escola.jpg"  class="imagem-sobre">
+    </section>
 
-    </main>
+    <br><br><br><br><br><br>
+
+    <section id="Benefícios" class="beneficios-section">
+        <div class="texto-beneficios">
+            <h2>Benefícios do ChatBot</h2>
+            <p>A interação entre dois “alunos” simula situações reais de sala de aula. O estudante se identifica
+                com o personagem que tem dúvidas, reduzindo vergonha de perguntar. O aluno inteligente adapta a explicação para o outro entender. 
+                Isso facilita a compreensão de matérias difíceis como matemática, física ou química. O chatbot pode mostrar o processo de raciocínio 
+                passo a passo. Ajuda o estudante a aprender como pensar, não só decorar. O chatbot pode ajustar o nível de dificuldade conforme o usuário. 
+                Pode repetir explicações de formas diferentes até o aluno  entender. O aluno pode estudar a qualquer momento, sem depender de professor ou tutor. 
+                Muitos alunos têm medo de errar em público. Com o chatbot, eles podem errar sem julgamento.</p>
+        </div>
+        <img src="img/persona.png"  class="imagem-beneficios"> 
+    </section>
+
+    <br><br><br><br><br><br>
+
+    <section id="Investimentos"  class="investir-section">
+        <div class="produtos">
+            <h2>Investimentos</h2>
+        </div>
+    </section>
+
+    <br><br><br><br><br><br>
+
+    <section id="Doações"  class="doacoes-section">
+        <div class="texto-doacoes">
+            <h2>Apoia-se</h2>
+            <p>Como um grupo de jovens estudantes, contamos com o seu apoio para ajudar com doações, 
+                para além de nos ajudar a manter nosso trabalho, e investir em novos equipamentos, 
+                cursos de capacitação, também nos incentiva a continuar nessa jornada!! Desde já, agradecemos o seu apoio!! 
+                Desejamos que você aproveite nossos serviços!!!</p>
+        </div>
+        <img src="img/doaçoes.jpg" class="imagem-doacoes">
+    </section>
+
 
     <footer>
+        
 
     </footer>
+
+
+
+    <button class="botao_home">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <button class="tema-btn">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 </html>
