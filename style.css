@@ -19,7 +19,7 @@ body{
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(to right, #2000B1, #5E59CF);
+    background: linear-gradient(to right, #250a9118, #5f59cf00);
     position: relative;
     overflow: hidden;
 }
@@ -407,7 +407,7 @@ footer{
 
 /* dark */
 .dark-mode header{
-   background: linear-gradient(to right, #2000B1, #5E59CF);
+   background: linear-gradient(to right, #250a914b, #5f59cf00);
 } 
 
 .dark-mode{
