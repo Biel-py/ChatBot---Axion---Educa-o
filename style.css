@@ -1,141 +1,427 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: var(--cor-bege-claro);
-  color: var(--cor-preto-suave);
-  height: 200vh;
-  overflow-x: hidden;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
-header {
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+body{
+    background: linear-gradient(to bottom, #7B7B7B, #4E4E4E);
+    color: #000000;
+    overflow-x: hidden;
 }
 
-.container {
-  position: relative;
-  width: 100%;
-  max-width: 100%;
-  height: 450px;
-  overflow: hidden;
+/* =========================
+   HEADER
+========================= */
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right, #2000B1, #5E59CF);
+    position: relative;
+    overflow: hidden;
+}
+
+.imagem-fundo{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.55;
+}
+
+/* navbar */
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    background: rgba(54, 43, 105, 0.95);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #477BFF;
+    backdrop-filter: blur(5px);
 }
 
 .menu{
     display: flex;
-    gap: 8px;
+    gap: 40px;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-}
-
-.imagem-fundo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-
-.conteudo {
-  position:relative;
-  z-index: 2;
-  color: white;
-  text-align: center;
-  padding: 20px 20px;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.8);  
-}
-
-nav{
-  position:absolute;
-  top:20px;
-  right:10px;
-  display:flex;
-  gap: 5px;
-  z-index: 2;
 
 }
-nav a{
-  color: white;
-  padding: 8px 10px;
-  font-size: 20px;
-  text-decoration: none;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
-  left: 0;
-  
-}
 
-
-.conteudo h1 {
-  font-size: 48px;
-  margin: 0;
-  animation: fadeSlideIn 1s ease-out forwards;
-  justify-content: center;      
-  align-items: center;
-  margin-top: 5px;
-}
-
-.conteudo p {
-  font-size: 25px;
-  margin: 10px 5;
-}
-
-.button-chat {
-  background-color:#0647d1;
-  color: white;
-  border: none;
-  padding: 15px 25px;
-  font-weight:bolder;
-  font-size: 18px;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 50px;
-  margin-right: 40px;
-}
-
-.botao_home{ 
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 50%;
-    background: #000;
+.menu li a{
+    text-decoration: none;
     color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 2cap;
+}
+
+.menu li a:hover{
+    color: #6BCADF;
+}
+
+.conteudo{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    background: rgba(71, 71, 71, 0.75);
+    padding: 35px;
+    border-radius: 20px;
+    width: 420px;
+    backdrop-filter: blur(6px);
+    border: 2px solid #8caaf58f;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.conteudo h1{
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.conteudo p{
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.button-chat{
+    padding: 14px 35px;
+    border: none;
+    border-radius: 30px;
+    background: #477BFF;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
-    font-size: 18px;
+    transition: 0.3s;
+}
+
+.button-chat:hover{
+    background: #6BCADF;
+    transform: scale(1.05);
+}
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.Sobre-nos{
+    width: 90%;
+    margin: auto;
+    background: #FFFFFF;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,0,0,0.25);
+}
+.beneficios-section{
+    width: 90%;
+    margin: auto;
+    background: #FFFFFF;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,0,0,0.25);
+}
+.investir-section{
+    width: 90%;
+    margin: auto;
+    background: #FFFFFF;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,0,0,0.25);
+}
+.doacoes-section{
+    width: 90%;
+    margin: auto;
+    background: #FFFFFF;
+    border-end-start-radius: 25px;
+    border-end-end-radius: 25px;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,0,0,0.25);
+}
+
+/* layout*/
+
+.Sobre-nos,
+.beneficios-section,
+.doacoes-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* textos */
+
+.texto-sobre,
+.texto-beneficios,
+.texto-doacoes{
+    flex: 1;
+    text-align: center;
+}
+
+.texto-sobre h2,
+.texto-beneficios h2,
+.texto-doacoes h2,
+.produtos h2{
+    
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #000000;
+}
+
+.texto-sobre p,
+.texto-beneficios p,
+.texto-doacoes p{
+    background: #6BCADF;
+    padding: 25px;
+    border-radius: 20px;
+    line-height: 2;
+    font-size: 1rem;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* imagens */
+
+.imagem-sobre,
+.imagem-beneficios,
+.imagem-doacoes{
+    width: 320px;
+    border-radius: 20px;
+    border: 5px solid #477BFF;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.imagem-sobre:hover,
+.imagem-beneficios:hover,
+.imagem-doacoes:hover{
+    transform: scale(1.03);
+}
+
+/* barras diagonais */
+
+section::before{
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 30px;
+    background: #1952E2;
+    top: 20px;
+    left: -40px;
+    transform: rotate(35deg);
+}
+section::after{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    background: #1952E2;
+    bottom: 20px;
+    right: -30px;
+}
+
+
+/* =========================
+   INVESTIMENTOS
+========================= */
+
+.investir-section{
+    text-align: center;
+}
+
+.produtos h2{
+    margin-bottom: 10px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    margin-top: 80px;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(to right, #2000B1, #5E59CF);
+    border-top: 4px solid #477BFF;
+}
+
+/* =========================
+   BOTÕES FLUTUANTES
+========================= */
+
+.botao_home,
+.tema-btn{
+    position: fixed;
+    right: 25px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none;
+    background: #477BFF;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 999;
+    transition: 0.3s;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+}
+
+.botao_home{
+    bottom: 95px;
 }
 
 .tema-btn{
-    position: fixed;
-
-    bottom: 90px;
-    right: 20px;
-
-    width: 50px;
-    height: 50px;
-
-    border: none;
-    border-radius: 50%;
-
-    background: #222;
-    color: white;
-
-    cursor: pointer;
-    font-size: 18px;
+    bottom: 25px;
 }
+
+.botao_home:hover,
+.tema-btn:hover{
+    background: #6BCADF;
+    transform: scale(1.1);
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media(max-width: 900px){
+
+    .menu{
+        gap: 15px;
+    }
+
+    .menu li a{
+        font-size: 0.85rem;
+    }
+
+    .conteudo{
+        width: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .conteudo h1{
+        font-size: 2.8rem;
+    }
+
+    .Sobre-nos,
+    .beneficios-section,
+    .doacoes-section{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagem-sobre,
+    .imagem-beneficios,
+    .imagem-doacoes{
+        width: 100%;
+        max-width: 320px;
+    }
+
+    section{
+        padding: 30px 20px;
+    }
+}
+
+/* dark */
+.dark-mode header{
+    background: linear-gradient(to right, #716799, #18274e);
+} 
 
 .dark-mode{
-    background-color: #121212;
+    background: linear-gradient(to bottom, #414141, #6a6a7c);
     color: white;
 }
 
-.dark-mode header{
-    background: #1e1e1e;
+.dark-mode section{
+    background: #313131;
+    color: white;
+}
+
+.dark-mode .texto-sobre p,
+.dark-mode .texto-beneficios p,
+.dark-mode .texto-doacoes p{
+    background: #6a6a7c;
+    color: white;
+}
+
+.dark-mode .navbar{
+    background: rgba(20, 20, 20, 0.95);
+}
+
+.dark-mode footer{
+    background: linear-gradient(to right, #716799, #18274e);
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode p,
+.dark-mode a{
+    color: white;
+}
+
+.dark-mode section::before{
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 30px;
+    background: #183785;
+    top: 20px;
+    left: -40px;
+    transform: rotate(35deg);
+}
+.dark-mode section::after{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    background: #183785;
+    bottom: 20px;
+    right: -30px;
+}
+
+/* =========================
+   BOTÃO HOME ANIMADO
+========================= */
+.botao_home{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.botao_home.mostrar{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* =========================
+   ANIMAÇÃO DAS SEÇÕES
+========================= */
+section{
+    opacity: 0;
+    transform: translateY(60px);
+    transition: 0.5s ease;
+}
+
+section.show{
+    opacity: 1;
+    transform: translateY(0);
 }
