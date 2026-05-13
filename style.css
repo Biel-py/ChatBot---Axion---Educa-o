@@ -42,11 +42,36 @@ body{
     left: 0;
     z-index: 999;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
     border-bottom: 3px solid #477BFF;
     backdrop-filter: blur(5px);
 }
+
+/* logo do site */
+
+.logo img{
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 2px solid white;
+
+    transition: 0.3s;
+}
+
+.logo img:hover{
+    transform: scale(1.15);
+
+    box-shadow: 0 0 20px #6BCADF;
+
+    border-color: #6BCADF;
+}
+
+/* menu */
 
 .menu{
     display: flex;
@@ -176,6 +201,16 @@ body{
     text-align: center;
 }
 
+/* deixa os textos na frente das barras azuis */
+
+.texto-sobre,
+.texto-beneficios,
+.texto-doacoes,
+.produtos{
+    position: relative;
+    z-index: 2;
+}
+
 .texto-sobre h2,
 .texto-beneficios h2,
 .texto-doacoes h2,
@@ -226,6 +261,7 @@ section::before{
     top: 20px;
     left: -40px;
     transform: rotate(35deg);
+    z-index:0 ;
 }
 section::after{
     content: "";
@@ -235,6 +271,7 @@ section::after{
     background: #1952E2;
     bottom: 20px;
     right: -30px;
+    z-index:0 ;
 }
 
 
@@ -260,6 +297,33 @@ footer{
     height: 120px;
     background: linear-gradient(to right, #2000B1, #5E59CF);
     border-top: 4px solid #477BFF;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+    color: white;
+    text-align: center;
+
+}
+
+.redes{
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;
+}
+
+.redes i{
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.redes i:hover{
+    color: #6BCADF;
+    transform: scale(1.2);
 }
 
 /* =========================
@@ -343,7 +407,7 @@ footer{
 
 /* dark */
 .dark-mode header{
-    background: linear-gradient(to right, #716799, #18274e);
+   background: linear-gradient(to right, #2000B1, #5E59CF);
 } 
 
 .dark-mode{
