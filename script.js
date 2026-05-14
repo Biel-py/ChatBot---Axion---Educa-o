@@ -91,4 +91,25 @@ function revelarSection(){
     });
 }
 
+/* =========================
+   INVESTIMENTOS
+========================= */
+
+const carousel = document.getElementById("carrosel");
+
+const scrollAmount = 340;
+
+document.querySelector(".next").addEventListener("click", () => {
+  carousel.scrollBy({
+    left: scrollAmount,
+    behavior: "smooth"
+  });
+});
+
+document.querySelector(".prev").addEventListener("click", () => {
+  carousel.scrollBy({
+    left: -scrollAmount,
+    behavior: "smooth"
+  });
+});
 revelarSection();
