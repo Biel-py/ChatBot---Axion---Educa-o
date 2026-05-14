@@ -300,11 +300,7 @@ section::after{
 .carrosel{
   display:flex;
   gap:20px;
-
   overflow-x:auto;
-  scroll-behavior:smooth;
-  scroll-snap-type:x mandatory;
-
   padding:10px 20px;
 }
 
